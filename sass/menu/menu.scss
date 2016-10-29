@@ -1,0 +1,34 @@
+@import "modules/_functions";
+@import "modules/_global_variables";
+
+@import "partials/_site-header";
+
+html, body {
+    height: 100%;
+}
+
+html { font-size: 62.5%; } 
+
+body {
+    font-size: $defaultFontSize;
+}
+
+a{
+    color:black;
+}
+
+a:hover, a:visited{
+    text-decoration: none;
+    color:black;
+}
+
+.site-content{
+    //margin-top: $siteHeaderHeight;
+    background-color: gray;
+    height: 100%;
+}
+
+@media only screen and (max-width: 430px) {
+	html { font-size: 50%; } 	
+}
+

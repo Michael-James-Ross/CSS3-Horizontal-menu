@@ -1,0 +1,62 @@
+<DOCTYPE html>
+    <html>
+    <head>
+        <title>Team</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" href="../css/libs/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="../css/menu/menu.css" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <header class="site-header">
+                        <div class="site-brand">
+                            <span>Some brand</span>
+                        </div>
+                        <nav class="site-navbar">
+                            <ul>
+                                <li><a href="#">Menu item 1</a></li>
+                                <li><a href="#">Menu item 2<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a>
+                                    <ul>
+                                        <li><a href="">Subitem item 1</a></li>
+                                        <li><a href="">Subitem item 2</a></li>
+                                        <li><a href="">Subitem item 3</a></li>
+                                        <li><a href="">Subitem item 4</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Menu item 3<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a></a>
+                                    <ul>
+                                        <li><a href="">Subitem item 1</a></li>
+                                        <li><a href="">Subitem item 2</a></li>
+                                        <li><a href="">Subitem item 3</a></li>
+                                        <li><a href="">Subitem item 4</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="show-menu">
+                            <button>
+                                <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                </header>
+            </div>
+            <section class="row site-content">
+            </section>
+        </div>
+        <script>
+            (function() {
+                $('.show-menu > button').on('click', function(event) {
+                    if($('.site-navbar > ul').css('display') == 'block') {
+                        $('.site-navbar > ul').hide();
+                    } else {
+                        $('.site-navbar > ul').show();
+                    }
+                    event.preventDefault();
+                });
+            })();
+        </script>    
+    </body>
+    </html>
