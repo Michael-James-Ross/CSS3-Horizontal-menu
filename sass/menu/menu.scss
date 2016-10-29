@@ -1,6 +1,4 @@
-@import "modules/_functions";
 @import "modules/_global_variables";
-
 @import "partials/_site-header";
 
 html, body {
@@ -23,9 +21,10 @@ a:hover, a:visited{
 }
 
 .site-content{
-    //margin-top: $siteHeaderHeight;
-    background-color: gray;
+    margin-top: $siteHeaderHeight;
+    background-color: lightgray;
     height: 100%;
+    padding: 10px;
 }
 
 @media only screen and (max-width: 430px) {

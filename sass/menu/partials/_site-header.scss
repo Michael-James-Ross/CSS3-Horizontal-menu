@@ -1,9 +1,9 @@
 .site-header {
     background-color: #3FCAE3;
-    overflow: hidden;
-    //position: fixed;
+    //overflow: hidden;
+    position: fixed;
     width: 100%;
-    //z-index: 999;
+    z-index: 999;
     .site-brand {
         float: left;
         display: table;
@@ -40,6 +40,7 @@
             }
             ul {
                 position: absolute;
+                z-index: 999;
                 display: none;
                 border-bottom: 3px solid #3FCAE3;
                 li {
